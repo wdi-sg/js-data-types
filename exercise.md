@@ -31,7 +31,7 @@ Javascript provides us with a number of native methods that allow us to interact
 * Add an element to the back of an array.
 * Remove an element from the back of an array.
 * Add an element to the front of an array.
-* Remove an element from the back of an array.
+* Remove an element from the front of an array.
 * Concatenates all the elements in an array into a string.
 * Separates the characters of a string into an array.
 

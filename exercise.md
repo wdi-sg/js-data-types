@@ -122,6 +122,32 @@ Fill out the truth tables below for `&&` (and), `||` (or) and one that uses mult
 |false|true|?|
 |false|false|?|
 
+### "Truthiness" and "Falsiness"
+
+You've seen the boolean values of `true` and `false`.
+
+There is also a concept of "truthy" and "falsey". In Javascript, the following things are "falsey":
+
+- `false`
+- `0` (zero)
+- `""` (empty string)
+- `null`
+- `undefined`
+- `NaN` (a special Number value meaning- Not-a-Number!)
+
+Everything else is "truthy".
+
+These do the same thing:
+
+```js
+var name = '';
+if(name == ''){
+  alert('Enter your name, please');
+}
+if(!name){
+  alert('Enter your name, please');
+}
+```
 
 ## Conditionals
 

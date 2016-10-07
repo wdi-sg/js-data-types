@@ -5,6 +5,7 @@ What is the return value of each of the below code snippets? Come up with an ans
 ```js
 typeof( 15 );
 // Include your answer below each line using a comment, like this.
+// Then, include the actual output of the command entered, in this case, the output of typeof( 15 );
 
 typeof( 5.5 );
 typeof( NaN );

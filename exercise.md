@@ -1,6 +1,20 @@
+# Intro to JS Worksheet
+
+This worksheet will actually double as a set of notes for future reference! Copy into your note-taking program at the end, if you'd like.
+
 ## Data Types
 
-What is the return value of each of the below code snippets? Come up with an answer before testing them out in the console.
+For each expression, predict an output in a comment (`//`), ***without first running the command***. Think back to the data types we just covered. Then below your prediction/hypothesis, write the actual output.
+
+##### Example:
+
+```js
+typeof("potato");
+//prediction: vegetable
+//actual: String
+```
+
+What is the ***return value*** or ***output*** of each of the expressions below? 
 
 ```js
 typeof( 15 );
@@ -13,6 +27,7 @@ typeof( "hello" );
 typeof( true )
 typeof( 1 != 2 );
 
+// use typeof to evaluate the expressions below:
 "hamburger" + "s";
 "hamburgers" - "s";
 "1" + "3"

@@ -1,33 +1,47 @@
-# Intro to JS Worksheet
+# Javascript Data Types Exercises
 
-This worksheet will actually double as a set of notes for future reference! Copy into your note-taking program at the end, if you'd like.
+> This worksheet will double as Javascript notes for future reference! Copy it into your preferred note-taking program at the end of class.
 
 ## Data Types
 
-For each expression, predict an output in a comment (`//`), ***without first running the command***. Think back to the data types we just covered. Then below your prediction/hypothesis, write the actual output.
+For each expression, predict what you think the output will be in a comment (`//`) ***without first running the command***. Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
 
-##### Example:
+#### Example
 
 ```js
 typeof("potato");
-//prediction: vegetable
-//actual: String
+// Prediction: Vegetable
+// Actual: String
 ```
 
-What is the ***return value*** or ***output*** of each of the expressions below? 
+What is the ***return value*** or ***output*** of each of the expressions below?
 
 ```js
 typeof( 15 );
-// Include your answer below each line using a comment, like this.
-// Then, include the actual output of the command entered, in this case, the output of typeof( 15 );
+// Prediction:
+// Actual:
 
 typeof( 5.5 );
-typeof( NaN );
-typeof( "hello" );
-typeof( true )
-typeof( 1 != 2 );
+// Prediction:
+// Actual:
 
-// use typeof to evaluate the expressions below:
+typeof( NaN );
+// Prediction:
+// Actual:
+
+typeof( "hello" );
+// Prediction:
+// Actual:
+
+typeof( true )
+// Prediction:
+// Actual:
+
+typeof( 1 != 2 );
+// Prediction:
+// Actual:
+
+
 "hamburger" + "s";
 "hamburgers" - "s";
 "1" + "3"
@@ -56,6 +70,7 @@ Javascript provides us with a number of native methods that allow us to interact
 ```
 
 What will the contents of the below arrays be after the code samples are executed? Come up with an answer yourself before testing it out in the console.
+
 > **HINT:** You might find it helpful to draw the arrays out as you run each line of code.
 
 ```js
@@ -65,7 +80,7 @@ numbers.push( 10 );
 numbers.unshift( 3 );
 ```
 
-```
+```text
 Your answer goes here.
 ```
 
@@ -77,7 +92,7 @@ var moreMorse = morse.join( " dash " );
 moreMorse.split( " " );
 ```
 
-```
+```text
 Your answer goes here.
 ```
 
@@ -94,7 +109,7 @@ bands[0].shift();
 bands[1][3] = "Ringo";
 ```
 
-```
+```text
 Your answer goes here.
 ```
 
@@ -138,33 +153,6 @@ Fill out the truth tables below for `&&` (and), `||` (or) and one that uses mult
 |false|true|?|
 |false|false|?|
 
-### "Truthiness" and "Falsiness"
-
-You've seen the boolean values of `true` and `false`.
-
-There is also a concept of "truthy" and "falsey". In Javascript, the following things are "falsey":
-
-- `false`
-- `0` (zero)
-- `""` (empty string)
-- `null`
-- `undefined`
-- `NaN` (a special Number value meaning- Not-a-Number!)
-
-Everything else is "truthy".
-
-These do the same thing:
-
-```js
-var name = '';
-if(name == ''){
-  alert('Enter your name, please');
-}
-if(!name){
-  alert('Enter your name, please');
-}
-```
-
 ## Conditionals
 
 You're a bouncer at a bar! Given an `age` variable, create a conditional that satisfies the following requirements...
@@ -186,6 +174,9 @@ Your task is to create a loop that prints out all the odd numbers between 1 and 
 ```
 
 ## Bonus: Fizz-Buzz
+
+<!-- AM: Add some bonuses to this bonus -->
+
 Fizz-Buzz is a classic coding exercise that you can create using your knowledge of conditionals and loops. Implement code that does the following...
 * Counts from 1 to 100 and prints out something for each number.
 * If the number is divisible by 3, print `"Fizz"`.

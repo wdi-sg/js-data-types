@@ -43,12 +43,32 @@ typeof(1 != 2)
 
 
 "hamburger" + "s"
+// Prediction:
+// Actual:
+
 "hamburgers" - "s"
+// Prediction:
+// Actual:
+
 "1" + "3"
+// Prediction:
+// Actual:
+
 "1" - "3"
+// Prediction:
+// Actual:
+
 "johnny" + 5
+// Prediction:
+// Actual:
+
 "johnny" - 5
+// Prediction:
+// Actual:
+
 99 * "luftbaloons"
+// Prediction:
+// Actual:
 ```
 
 What's going on in the second half of the previous question? Are there any "rules" we can pull from those examples?

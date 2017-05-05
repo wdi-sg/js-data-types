@@ -9,7 +9,7 @@ For each expression, predict what you think the output will be in a comment (`//
 #### Example
 
 ```js
-typeof("potato");
+typeof("potato")
 // Prediction: Vegetable
 // Actual: String
 ```
@@ -17,19 +17,19 @@ typeof("potato");
 What is the output of each of the expressions below?
 
 ```js
-typeof(15);
+typeof(15)
 // Prediction:
 // Actual:
 
-typeof(5.5);
+typeof(5.5)
 // Prediction:
 // Actual:
 
-typeof(NaN);
+typeof(NaN)
 // Prediction:
 // Actual:
 
-typeof("hello");
+typeof("hello")
 // Prediction:
 // Actual:
 
@@ -37,18 +37,18 @@ typeof(true)
 // Prediction:
 // Actual:
 
-typeof(1 != 2);
+typeof(1 != 2)
 // Prediction:
 // Actual:
 
 
-"hamburger" + "s";
-"hamburgers" - "s";
+"hamburger" + "s"
+"hamburgers" - "s"
 "1" + "3"
 "1" - "3"
-"johnny" + 5;
+"johnny" + 5
 "johnny" - 5
-99 * "luftbaloons";
+99 * "luftbaloons"
 ```
 
 What's going on in the second half of the previous question? Are there any "rules" we can pull from those examples?
@@ -76,10 +76,10 @@ What will the contents of the below arrays be after the code samples are execute
 > **HINT:** You might find it helpful to draw the arrays out as you run each line of code.
 
 ```js
-var numbers = [2, 4, 6, 8];
-numbers.pop();
-numbers.push(10);
-numbers.unshift(3);
+var numbers = [2, 4, 6, 8]
+numbers.pop()
+numbers.push(10)
+numbers.unshift(3)
 ```
 
 ```text
@@ -89,9 +89,9 @@ Your answer goes here.
 What is the return value of the below code sample? Come up with an answer yourself before testing it out in the console.
 
 ```js
-var morse = ["dot", "pause", "dot"];
-var moreMorse = morse.join(" dash ");
-moreMorse.split(" ");
+var morse = ["dot", "pause", "dot"]
+var moreMorse = morse.join(" dash ")
+moreMorse.split(" ")
 ```
 
 ```text
@@ -101,14 +101,14 @@ Your answer goes here.
 What will the contents of the below array be after the below code sample is executed? Come up with an answer yourself before testing it out in the console.
 
 ```js
-var bands = [];
-var beatles = ["Paul", "John", "George", "Pete"];
-var stones = ["Brian", "Mick", "Keith", "Ronnie", "Charlie"];
-bands.push(beatles);
-bands.unshift(stones);
-bands[bands.length - 1].pop();
-bands[0].shift();
-bands[1][3] = "Ringo";
+var bands = []
+var beatles = ["Paul", "John", "George", "Pete"]
+var stones = ["Brian", "Mick", "Keith", "Ronnie", "Charlie"]
+bands.push(beatles)
+bands.unshift(stones)
+bands[bands.length - 1].pop()
+bands[0].shift()
+bands[1][3] = "Ringo"
 ```
 
 ```text
@@ -159,8 +159,6 @@ Fill out the truth tables below for `&&` (and), `||` (or) and one that uses mult
 
 ## Conditionals
 
-<!-- AM: Add additional condition (e.g., need ID)? -->
-
 You're a bouncer at a bar! Given an `age` variable, create a conditional that satisfies the following requirements...
 * If a patron is older than `21`, print out `"Come on in!"`.
 * If a patron is between `18` and `21`, print out `"Come on in (but no drinking)!"`.
@@ -171,6 +169,14 @@ You're a bouncer at a bar! Given an `age` variable, create a conditional that sa
 // Your answer goes here.
 ```
 
+#### Bonus
+
+Bar patrons must have an ID if the bouncer is even going to consider what age they are.
+- If the patron has an ID, the bouncer will then check if they are of the proper age
+- If the patron does not have an ID, the bouncer will tell them `"No ID, no entry."`
+
+> Hint: Whether the patron has an ID or not can be stored in a `hasId` variable. What do you think the stored data type should be?
+
 ## Loops
 
 Your task is to create a loop that prints out all the odd numbers between 1 and 100...twice! Your solution must use one `for` loop and one `while` loop.
@@ -179,9 +185,12 @@ Your task is to create a loop that prints out all the odd numbers between 1 and 
 // Your answer goes here.
 ```
 
-## Bonus: Fizz-Buzz
+#### Bonus
 
-<!-- AM: Add some bonuses to this bonus -->
+* Try doing this using a single `for` loop
+* Make it so that the first iteration of the loop prints out all odd numbers between 1 and 100 but the second iteration of the loop prints out all of the even numbers between 1 and 100
+
+## Bonus: Fizz-Buzz
 
 Fizz-Buzz is a classic coding exercise that you can create using your knowledge of conditionals and loops. Implement code that does the following...
 * Counts from 1 to 100 and prints out something for each number.
@@ -191,10 +200,30 @@ Fizz-Buzz is a classic coding exercise that you can create using your knowledge 
 * If the number does not meet any of the above conditions, just print the number.
 
 Your output should look something like this...
-```
+
+```text
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
 ```
 
 ```js
 // Your answer goes here.
 ```
+
+#### Bonuses (for the bonus)
+
+* Encapsulate all of your logic into a function, so that each iteration of the game will trigger function calls that look something like these...
+
+```js
+fizzBuzz(1)
+// => prints "1" to the console
+
+fizzBuzz(3)
+// => prints "3" to the console
+
+fizzBuzz(15)
+// => prints "FizzBuzz" to the console
+```
+
+* Create a recursive solution (i.e., define a FizzBuzz function that calls itself in order to continue the game).
+
+> [Resource](https://medium.com/@kevincennis/recursion-in-javascript-1608032c7a1f)

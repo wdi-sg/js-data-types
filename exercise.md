@@ -1,45 +1,61 @@
-# Intro to JS Worksheet
+# Javascript Data Types Exercises
 
-This worksheet will actually double as a set of notes for future reference! Copy into your note-taking program at the end, if you'd like.
+> This worksheet will double as Javascript notes for future reference! Copy it into your preferred note-taking program at the end of class.
 
 ## Data Types
 
-For each expression, predict an output in a comment (`//`), ***without first running the command***. Think back to the data types we just covered. Then below your prediction/hypothesis, write the actual output.
+For each expression, predict what you think the output will be in a comment (`//`) ***without first running the command***. Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
 
-##### Example:
+#### Example
 
 ```js
-typeof("potato");
-//prediction: vegetable
-//actual: String
+typeof("potato")
+// Prediction: Vegetable
+// Actual: String
 ```
 
-What is the ***return value*** or ***output*** of each of the expressions below? 
+What is the output of each of the expressions below?
 
 ```js
-typeof( 15 );
-// Include your answer below each line using a comment, like this.
-// Then, include the actual output of the command entered, in this case, the output of typeof( 15 );
+typeof(15)
+// Prediction:
+// Actual:
 
-typeof( 5.5 );
-typeof( NaN );
-typeof( "hello" );
-typeof( true )
-typeof( 1 != 2 );
+typeof(5.5)
+// Prediction:
+// Actual:
 
-// use typeof to evaluate the expressions below:
-"hamburger" + "s";
-"hamburgers" - "s";
+typeof(NaN)
+// Prediction:
+// Actual:
+
+typeof("hello")
+// Prediction:
+// Actual:
+
+typeof(true)
+// Prediction:
+// Actual:
+
+typeof(1 != 2)
+// Prediction:
+// Actual:
+
+
+"hamburger" + "s"
+"hamburgers" - "s"
 "1" + "3"
 "1" - "3"
-"johnny" + 5;
+"johnny" + 5
 "johnny" - 5
-99 * "luftbaloons";
+99 * "luftbaloons"
 ```
 
 What's going on in the second half of the previous question? Are there any "rules" we can pull from those examples?
 
-## Data Collections
+## Data Structures
+
+> Data structures include arrays and objects. We will go over objects in a later class.
 
 ### Arrays
 
@@ -49,52 +65,53 @@ Javascript provides us with a number of native methods that allow us to interact
 * Add an element to the front of an array.
 * Remove an element from the front of an array.
 * Concatenates all the elements in an array into a string.
-* Separates the characters of a string into an array.
+* Separates the characters of a string into an array. This one is a string method.
+
+> This is a great exercise for practicing your "Google Fu"! If you need a starting point, check out [MDN's documentation page on arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
 ```js
 // Your answers go here.
 ```
 
 What will the contents of the below arrays be after the code samples are executed? Come up with an answer yourself before testing it out in the console.
-> **HINT:** You might find it helpful to draw the arrays out as you run each line of code.
 
 ```js
-var numbers = [ 2, 4, 6, 8 ];
-numbers.pop();
-numbers.push( 10 );
-numbers.unshift( 3 );
+var numbers = [2, 4, 6, 8]
+numbers.pop()
+numbers.push(10)
+numbers.unshift(3)
 ```
 
-```
+```text
 Your answer goes here.
 ```
 
 What is the return value of the below code sample? Come up with an answer yourself before testing it out in the console.
 
 ```js
-var morse = [ "dot", "pause", "dot" ];
-var moreMorse = morse.join( " dash " );
-moreMorse.split( " " );
+var morse = ["dot", "pause", "dot"]
+var moreMorse = morse.join(" dash ")
+moreMorse.split(" ")
 ```
 
-```
+```text
 Your answer goes here.
 ```
 
 What will the contents of the below array be after the below code sample is executed? Come up with an answer yourself before testing it out in the console.
 
 ```js
-var bands = [];
-var beatles = [ "Paul", "John", "George", "Pete" ];
-var stones = [ "Brian", "Mick", "Keith", "Ronnie", "Charlie" ];
-bands.push( beatles );
-bands.unshift( stones );
-bands[ bands.length - 1 ].pop();
-bands[0].shift();
-bands[1][3] = "Ringo";
+var bands = []
+var beatles = ["Paul", "John", "George", "Pete"]
+var stones = ["Brian", "Mick", "Keith", "Ronnie", "Charlie"]
+bands.push(beatles)
+bands.unshift(stones)
+bands[bands.length - 1].pop()
+bands[0].shift()
+bands[1][3] = "Ringo"
 ```
 
-```
+```text
 Your answer goes here.
 ```
 
@@ -108,8 +125,10 @@ Here's an example truth table for the `!` (not) operation. In it, we're listing 
 |false|true|
 
 Fill out the truth tables below for `&&` (and), `||` (or) and one that uses multiple comparison operators. All you need to do is replace the `?`'s with either `true` or `false`.
-> **NOTE:** Because of markdown formatting, `||` and `&&` have been replaced with `OR` and `AND` respectively.  
-> **HINT:** With the last one, it may be helpful to add additional columns to the table for each individual comparison.  
+
+> **NOTE:** Because of markdown formatting, `||` and `&&` have been replaced with `OR` and `AND` respectively.
+>
+> **HINT:** With the last one, it may be helpful to add additional columns to the table for each individual comparison.
 
 | a | b | a AND b |
 | --- | --- | --- |
@@ -138,36 +157,9 @@ Fill out the truth tables below for `&&` (and), `||` (or) and one that uses mult
 |false|true|?|
 |false|false|?|
 
-### "Truthiness" and "Falsiness"
-
-You've seen the boolean values of `true` and `false`.
-
-There is also a concept of "truthy" and "falsey". In Javascript, the following things are "falsey":
-
-- `false`
-- `0` (zero)
-- `""` (empty string)
-- `null`
-- `undefined`
-- `NaN` (a special Number value meaning- Not-a-Number!)
-
-Everything else is "truthy".
-
-These do the same thing:
-
-```js
-var name = '';
-if(name == ''){
-  alert('Enter your name, please');
-}
-if(!name){
-  alert('Enter your name, please');
-}
-```
-
 ## Conditionals
 
-You're a bouncer at a bar! Given an `age` variable, create a conditional that satisfies the following requirements...
+You're a bouncer at a bar. Given an `age` variable, create a conditional that satisfies the following requirements...
 * If a patron is older than `21`, print out `"Come on in!"`.
 * If a patron is between `18` and `21`, print out `"Come on in (but no drinking)!"`.
 * If a patron is younger than 18, print out `"You're too young to be in here!"`.
@@ -177,15 +169,29 @@ You're a bouncer at a bar! Given an `age` variable, create a conditional that sa
 // Your answer goes here.
 ```
 
+#### Bonus
+
+Bar patrons must have an ID if the bouncer is even going to consider what age they are.
+- If the patron has an ID, the bouncer will then check if they are of the proper age
+- If the patron does not have an ID, the bouncer will tell them `"No ID, no entry."`
+
+> Hint: Whether the patron has an ID or not can be stored in a `hasId` variable. What do you think the stored data type should be?
+
 ## Loops
 
-Your task is to create a loop that prints out all the odd numbers between 1 and 100...twice! Use a different type of Javascript loop each time.
+Your task is to create a loop that prints out all the odd numbers between 1 and 100...twice! Your solution must use one `for` loop and one `while` loop.
 
 ```js
 // Your answer goes here.
 ```
 
+#### Bonus
+
+* Try doing this using a single `for` loop
+* Make it so that the first iteration of the loop prints out all odd numbers between 1 and 100 but the second iteration of the loop prints out all of the even numbers between 1 and 100
+
 ## Bonus: Fizz-Buzz
+
 Fizz-Buzz is a classic coding exercise that you can create using your knowledge of conditionals and loops. Implement code that does the following...
 * Counts from 1 to 100 and prints out something for each number.
 * If the number is divisible by 3, print `"Fizz"`.
@@ -194,10 +200,30 @@ Fizz-Buzz is a classic coding exercise that you can create using your knowledge 
 * If the number does not meet any of the above conditions, just print the number.
 
 Your output should look something like this...
-```
+
+```text
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
 ```
 
 ```js
 // Your answer goes here.
 ```
+
+#### Bonus (for the bonus)
+
+* Encapsulate all of your logic into a function, so that each iteration of the game will trigger function calls that look something like these...
+
+```js
+fizzBuzz(1)
+// => prints "1" to the console
+
+fizzBuzz(3)
+// => prints "3" to the console
+
+fizzBuzz(15)
+// => prints "FizzBuzz" to the console
+```
+
+* Create a recursive solution (i.e., define a FizzBuzz function that calls itself in order to continue the game).
+
+> [Resource](https://medium.com/@kevincennis/recursion-in-javascript-1608032c7a1f)

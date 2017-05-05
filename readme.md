@@ -1,8 +1,9 @@
+# Javascript Data Types Exercises
+
 ## Instructions
 
-* Clone this repo: `git clone git@github.com:ga-wdi-exercises/js-data-types.git`
-* Follow the instructions to each section in `exercise.md`. All the questions will have you provide an answer in a dedicated space below each of them.
-* You will not be submitting this exercise, so no need for `git push` or pull requests.
+  1. Clone this repo: `$ git clone git@github.com:ga-wdi-exercises/js-data-types.git`
+  2. Follow the instructions to each section in `exercise.md`. All the questions will have you provide an answer in a dedicated space below each of them.
 
 ## How To Test Your Code
 

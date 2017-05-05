@@ -14,30 +14,30 @@ typeof("potato");
 // Actual: String
 ```
 
-What is the ***return value*** or ***output*** of each of the expressions below?
+What is the output of each of the expressions below?
 
 ```js
-typeof( 15 );
+typeof(15);
 // Prediction:
 // Actual:
 
-typeof( 5.5 );
+typeof(5.5);
 // Prediction:
 // Actual:
 
-typeof( NaN );
+typeof(NaN);
 // Prediction:
 // Actual:
 
-typeof( "hello" );
+typeof("hello");
 // Prediction:
 // Actual:
 
-typeof( true )
+typeof(true)
 // Prediction:
 // Actual:
 
-typeof( 1 != 2 );
+typeof(1 != 2);
 // Prediction:
 // Actual:
 
@@ -65,6 +65,8 @@ Javascript provides us with a number of native methods that allow us to interact
 * Concatenates all the elements in an array into a string.
 * Separates the characters of a string into an array.
 
+> This is a great exercise for practicing your "Google Fu"!
+
 ```js
 // Your answers go here.
 ```
@@ -74,10 +76,10 @@ What will the contents of the below arrays be after the code samples are execute
 > **HINT:** You might find it helpful to draw the arrays out as you run each line of code.
 
 ```js
-var numbers = [ 2, 4, 6, 8 ];
+var numbers = [2, 4, 6, 8];
 numbers.pop();
-numbers.push( 10 );
-numbers.unshift( 3 );
+numbers.push(10);
+numbers.unshift(3);
 ```
 
 ```text
@@ -87,9 +89,9 @@ Your answer goes here.
 What is the return value of the below code sample? Come up with an answer yourself before testing it out in the console.
 
 ```js
-var morse = [ "dot", "pause", "dot" ];
-var moreMorse = morse.join( " dash " );
-moreMorse.split( " " );
+var morse = ["dot", "pause", "dot"];
+var moreMorse = morse.join(" dash ");
+moreMorse.split(" ");
 ```
 
 ```text
@@ -100,11 +102,11 @@ What will the contents of the below array be after the below code sample is exec
 
 ```js
 var bands = [];
-var beatles = [ "Paul", "John", "George", "Pete" ];
-var stones = [ "Brian", "Mick", "Keith", "Ronnie", "Charlie" ];
-bands.push( beatles );
-bands.unshift( stones );
-bands[ bands.length - 1 ].pop();
+var beatles = ["Paul", "John", "George", "Pete"];
+var stones = ["Brian", "Mick", "Keith", "Ronnie", "Charlie"];
+bands.push(beatles);
+bands.unshift(stones);
+bands[bands.length - 1].pop();
 bands[0].shift();
 bands[1][3] = "Ringo";
 ```
@@ -123,8 +125,10 @@ Here's an example truth table for the `!` (not) operation. In it, we're listing 
 |false|true|
 
 Fill out the truth tables below for `&&` (and), `||` (or) and one that uses multiple comparison operators. All you need to do is replace the `?`'s with either `true` or `false`.
-> **NOTE:** Because of markdown formatting, `||` and `&&` have been replaced with `OR` and `AND` respectively.  
-> **HINT:** With the last one, it may be helpful to add additional columns to the table for each individual comparison.  
+
+> **NOTE:** Because of markdown formatting, `||` and `&&` have been replaced with `OR` and `AND` respectively.
+>
+> **HINT:** With the last one, it may be helpful to add additional columns to the table for each individual comparison.
 
 | a | b | a AND b |
 | --- | --- | --- |
@@ -155,6 +159,8 @@ Fill out the truth tables below for `&&` (and), `||` (or) and one that uses mult
 
 ## Conditionals
 
+<!-- AM: Add additional condition (e.g., need ID)? -->
+
 You're a bouncer at a bar! Given an `age` variable, create a conditional that satisfies the following requirements...
 * If a patron is older than `21`, print out `"Come on in!"`.
 * If a patron is between `18` and `21`, print out `"Come on in (but no drinking)!"`.
@@ -167,7 +173,7 @@ You're a bouncer at a bar! Given an `age` variable, create a conditional that sa
 
 ## Loops
 
-Your task is to create a loop that prints out all the odd numbers between 1 and 100...twice! Use a different type of Javascript loop each time.
+Your task is to create a loop that prints out all the odd numbers between 1 and 100...twice! Your solution must use one `for` loop and one `while` loop.
 
 ```js
 // Your answer goes here.

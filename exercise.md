@@ -209,7 +209,7 @@ Your output should look something like this...
 // Your answer goes here.
 ```
 
-#### Bonuses (for the bonus)
+#### Bonus (for the bonus)
 
 * Encapsulate all of your logic into a function, so that each iteration of the game will trigger function calls that look something like these...
 

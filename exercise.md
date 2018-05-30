@@ -167,7 +167,9 @@ var phoneBook = {
 ```
 
 Write a line of code that accesses the phone number for Pam.
+
 Write a line of code that creates a new record for John at 435-567-1223.
+
 Write your own object and console.log that value.
 
 Find out what `Object.keys(phoneBook)` does.

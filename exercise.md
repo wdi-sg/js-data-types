@@ -214,7 +214,7 @@ You're a bouncer at a bar. Given an `age` variable, create a conditional that sa
 // Your answer goes here.
 ```
 
-Further: 
+#### Further: 
 
 Bar patrons must have an ID if the bouncer is even going to consider what age they are.
 - If the patron has an ID, the bouncer will then check if they are of the proper age
@@ -223,7 +223,7 @@ Bar patrons must have an ID if the bouncer is even going to consider what age th
 > Hint: Whether the patron has an ID or not can be stored in a `hasId` variable. What do you think the stored data type should be?
 
 
-Further 2:
+#### Further 2:
 
 Starting at the bottom of your js file, create a variable speed. write the contitional for a traffic stop. If speed is less than 10 console.log "I pulled you over because you were going too slow". If speed is more than 50 console.log "I pulled you over for going to fast".
 

@@ -2,7 +2,7 @@
 
 ## Instructions
 
-  1. Clone this repo: `$ git clone git@github.com:ga-wdi-exercises/js-data-types.git`
+  1. Clone this repo: `$ git clone https://github.com/wdi-sg/js-data-types.git`
   2. Follow the instructions to each section in `exercise.md`. All the questions will have you provide an answer in a dedicated space below each of them.
 
 ## How To Test Your Code
